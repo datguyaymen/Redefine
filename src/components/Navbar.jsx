@@ -42,6 +42,7 @@ const Navbar = () => {
   useEffect(() => {
     if (isAudioPlaying) {
       audioElementRef.current.play();
+      audioElementRef.current.volume = 0.1;
     } else audioElementRef.current.pause();
   }, [isAudioPlaying]);
   return (
